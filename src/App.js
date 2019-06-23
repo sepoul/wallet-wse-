@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+import Drawer from '@material-ui/core/Drawer';
+import StateLessFront from './Components/Welcome/example.js';
+import SignUp from './Components/Register/register.js';
 import './App.css';
 
 function App() {
+
+  const [state, setState] = React.useState({
+    bottom: false,
+  });
+
+  const handleDrawer =  (open) => (event) => {
+    setState({...state, bottom: open});
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <StateLessFront handleDrawer={handleDrawer(true)}>
+    </StateLessFront>
+    <Drawer onClose={handleDrawer(false)} anchor='bottom' >
+      <SignUp>
+      </SignUp>
+    </Drawer>
     </div>
   );
 }
