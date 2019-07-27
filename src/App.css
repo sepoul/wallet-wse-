@@ -18,6 +18,10 @@
   color: white;
 }
 
+.Remove {
+  display: none;
+}
+
 .App-link {
   color: #61dafb;
 }
