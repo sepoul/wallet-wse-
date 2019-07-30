@@ -25,3 +25,13 @@
 .App-link {
   color: #61dafb;
 }
+
+.Welcome {
+  display: flex;
+  flex-direction: column;
+}
+
+.SignUp {
+  display: flex;
+  flex-direction: column;
+}

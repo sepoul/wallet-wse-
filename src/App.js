@@ -10,18 +10,21 @@ function App() {
     bottom: false,
   });
 
+  // Adding state information
+  const shouldShowFront = true;
+
   const handleDrawer =  (open) => (event) => {
+    console.log("open: ")
     setState({...state, bottom: open});
   }
 
   return (
     <div>
-    <StateLessFront handleDrawer={handleDrawer(true)}>
-    </StateLessFront>
-    <Drawer onClose={handleDrawer(false)} anchor='bottom' >
-      <SignUp>
-      </SignUp>
-    </Drawer>
+    { shouldShowFront ?
+        (<StateLessFront handleDrawer={handleDrawer(true)}>
+        </StateLessFront>) :
+        <span>Front down</span>
+    }
     </div>
   );
 }
