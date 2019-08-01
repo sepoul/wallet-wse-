@@ -35,7 +35,6 @@ function StateLessFront(props) {
               component="button"
               variant="body2"
               className="Button"
-              onClick={props.handleDrawer}
             >
               Sign Up
             </a>
