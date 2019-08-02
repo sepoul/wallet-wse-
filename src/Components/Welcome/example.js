@@ -22,29 +22,35 @@ function StateLessFront(props) {
           The world social economy
           </h1>
           <img src={logo} className="App-logo" alt="logo" />
-          <article className={classes.root}>
-            <h5 variant="h5" component="h3">
-              Why we exist
-            </h5>
-            <p component="p">
-              This platform helps you buy goods using our free wsec. You can
-              also sell goods using the same currency. Start by making an
-              account and you can't start your purchases immediatly.
-            </p>
-            <a
-              component="button"
-              variant="body2"
-              className="Button"
-              onClick={props.handleDrawer}
-            >
-              Sign Up
-            </a>
-          </article>
         </div>
-        <div className="Sign-Up">
-          <SignUp>
-          </SignUp>
-        </div>
+        <section>
+          <div>
+          </div>
+          <div className="Sign-Up Drawer">
+              <SignUp>
+              </SignUp>
+          </div>
+          <div>
+          </div>
+        </section>
+        <article className={classes.root}>
+          <h5 variant="h5" component="h3">
+            Why we exist
+          </h5>
+          <p component="p">
+            This platform helps you buy goods using our free wsec. You can
+            also sell goods using the same currency. Start by making an
+            account and you can't start your purchases immediatly.
+          </p>
+          <a
+            component="button"
+            variant="body2"
+            className="Button"
+            onClick={props.handleDrawer}
+          >
+            Sign Up
+          </a>
+        </article>
       </header>
       <div>
       </div>

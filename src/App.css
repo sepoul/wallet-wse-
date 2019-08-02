@@ -1,3 +1,17 @@
+@-webkit-keyframes downward {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(150px)
+  }
+
+  100% {
+    transform: translateY(150px);
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -33,5 +47,21 @@
 
 .SignUp {
   display: flex;
-  flex-direction: column;
+  width: 80px;
+
+}
+
+section div {
+  width: 180px;
+  height: auto;
+}
+
+section:hover {
+  -webkit-animation: downward 2s;
+  background-color: rgb(90, 70, 10);
+}
+
+section {
+  display: flex;
+  flex-direction: row;
 }
