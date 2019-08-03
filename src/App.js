@@ -13,7 +13,7 @@ function App() {
   const decorationMatrix = new Map(
     [
       ["background", LIGHT],
-      ["animated", false]
+      ["animated", true]
     ]
   );
 

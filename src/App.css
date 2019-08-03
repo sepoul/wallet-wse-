@@ -1,3 +1,17 @@
+.decoration {
+  color: rgb(230, 10, 10, 0.9);
+}
+
+td {
+  color: rgb(230, 10, 10, 0.9);
+  padding: 5px 5px 5px 5px;
+}
+
+table {
+  background-color: pink;
+  border: 2px solid yellow;
+}
+
 img {
   filter: saturate(3);
   width: 50%;
@@ -8,18 +22,12 @@ img {
   flex-direction: row;
 }
 
-@-webkit-keyframes downward {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(150px)
-  }
-
-  100% {
-    transform: translateY(150px);
-  }
+@keyframes myanimation {
+  0%   {background-color:red; left:0px; top:0px; height: 400px;}
+  25%  {background-color:yellow; left:200px; top:0px; height: 500px;}
+  50%  {background-color:blue; left:200px; top:0px; height: 600px;}
+  75%  {background-color:green; left:0px; top:0px; height: 700px;}
+  100% {background-color:red; left:220px; top:0px; height: 800px;}
 }
 
 .App {
@@ -76,9 +84,11 @@ section div {
 }
 
 .Drawer:hover {
-  -webkit-animation: downward 2s;
   background-color: white;
   color: rgb(0, 0, 255, 0.9);
+  animation-name: myanimation;
+  animation-duration: 2s;
+  position: relative;
 }
 
 .Drawer-Passage {
