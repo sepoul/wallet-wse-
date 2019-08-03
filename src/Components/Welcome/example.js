@@ -9,8 +9,7 @@ import './../../App.css';
 
 function StateLessFront(props) {
   const decorationMatrix = props.decorationMatrix;
-
-  decorationMatrix.forEach((x, y) => console.log(x, y));
+  const isAnimated = decorationMatrix.get("animated");
 
   return (
     <div className="App" >
@@ -25,7 +24,7 @@ function StateLessFront(props) {
             <img src={loga} className="App-logo" alt="logo" />
           </div>
           <article>
-            <h5 variant="h5" component="h3">
+            <h5>
               Why we exist
             </h5>
             <p component="p">
@@ -36,7 +35,7 @@ function StateLessFront(props) {
           </article>
         </div>
         <div className="Sign-Up">
-          <SignUp>
+          <SignUp isAnimated={isAnimated}>
           </SignUp>
         </div>
         <section>
