@@ -32,7 +32,7 @@ img {
 }
 
 .App-header {
-  background-color: rgb(100, 140, 214);
+  background-color: rgb(0, 0, 255, 0.9);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -77,18 +77,29 @@ section div {
 
 .Drawer:hover {
   -webkit-animation: downward 2s;
-  background-color: rgb(90, 70, 10);
+  background-color: white;
+  color: rgb(0, 0, 255, 0.9);
 }
 
 .Drawer-Passage {
   width: 100px;
   padding: 50px;
-  color: rgb(255, 0, 0, 0.1);
+  color: rgb(30, 50, 255, 0.1);
 }
 
-.Hallway-Effect {
-  background-color: rgb(142, 233, 104, 0.1);
+.social {
+  display: flex;
+  width: 40px;
 }
+.Hallway-Effect {
+  background-color: white;
+}
+
+.Hallway-Effect SignUp {
+  background-color: red;
+}
+
+
 /* section:hover {
   -webkit-animation: downward 2s;
   background-color: rgb(90, 70, 10);

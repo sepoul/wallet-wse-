@@ -1,6 +1,8 @@
 import React from 'react';
-
+import fblogo from './fblogo.png'
 function SignUp() {
+
+
   return (
       <section>
       <h3>Sign Up</h3>
@@ -20,12 +22,12 @@ function SignUp() {
            </span>
            <div>  <span>Here connect to social media
                   </span>
-                  <a href="#"> Add me image Here
-                  </a>
-                  <a href="#"> Add me image Here
-                  </a>
-                  <a href="#"> Add me image Here
-                  </a>
+                  <img src={fblogo} alt="FB" className="social">
+                  </img>
+                  <img src={fblogo} alt="GP" className="social">
+                  </img>
+                  <img src={fblogo} alt="TWTTR" className="social">
+                  </img>
             </div>
 
       </p>
