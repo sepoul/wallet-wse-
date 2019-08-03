@@ -1,3 +1,13 @@
+img {
+  filter: saturate(3);
+  width: 50%;
+}
+
+#images {
+  display: flex;
+  flex-direction: row;
+}
+
 @-webkit-keyframes downward {
   0% {
     transform: translateY(0px);
@@ -22,7 +32,7 @@
 }
 
 .App-header {
-  background-color: #D3D3D3;
+  background-color: rgb(100, 140, 214);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

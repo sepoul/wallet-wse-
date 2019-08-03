@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from './../../logo.png';
+import logi from './../../logi.png';
+import loga from './../../loga.png';
 import SignUp from './../Register/register.js';
 
 import './../../App.css';
@@ -17,7 +19,25 @@ function StateLessFront(props) {
           <h1>
           The world social economy
           </h1>
-          <img src={logo} className="App-logo" alt="logo" />
+          <div id="images">
+            <img src={logo} className="App-logo" alt="logo" />
+            <img src={logi} className="App-logo" alt="logo" />
+            <img src={loga} className="App-logo" alt="logo" />
+          </div>
+          <article>
+            <h5 variant="h5" component="h3">
+              Why we exist
+            </h5>
+            <p component="p">
+              This platform helps you buy goods using our free wsec. You can
+              also sell goods using the same currency. Start by making an
+              account and you can't start your purchases immediatly.
+            </p>
+          </article>
+        </div>
+        <div className="Sign-Up">
+          <SignUp>
+          </SignUp>
         </div>
         <section>
           <div className="Sign-Up Drawer-Passage Hallway-Effect">

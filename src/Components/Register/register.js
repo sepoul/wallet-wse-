@@ -5,11 +5,15 @@ function SignUp() {
       <section>
       <h3>Sign Up</h3>
       <form>
-        <p> Specific stuff, add some spectific level css here
-          <label for="traditional">traditional input
-          </label>
-          <input type="textarea" name="traditional">
-          </input>
+        <p>
+          <div className="Sign-Up">Specific stuff, add some spectific level css here
+          </div>
+          <div className="Sign-Up">
+            <label for="traditional">traditional input
+            </label>
+            <input type="textarea" name="traditional">
+            </input>
+          </div>
         </p>
         <p>Social media stuff
            <span>Some Icon Here with F
