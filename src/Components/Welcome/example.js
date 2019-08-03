@@ -1,18 +1,14 @@
 import React from 'react';
 import logo from './../../logo.png';
-import { makeStyles } from '@material-ui/core/styles';
 import SignUp from './../Register/register.js';
 
 import './../../App.css';
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    padding: theme.spacing(3, 2),
-  },
-}));
 
 function StateLessFront(props) {
-  const classes = useStyles();
+  const decorationMatrix = props.decorationMatrix;
+
+  decorationMatrix.forEach((x, y) => console.log(x, y));
 
   return (
     <div className="App" >
@@ -24,16 +20,20 @@ function StateLessFront(props) {
           <img src={logo} className="App-logo" alt="logo" />
         </div>
         <section>
-          <div>
+          <div className="Sign-Up Drawer-Passage Hallway-Effect">
+              <SignUp>
+              </SignUp>
           </div>
           <div className="Sign-Up Drawer">
               <SignUp>
               </SignUp>
           </div>
-          <div>
+          <div className="Sign-Up Drawer-Passage Hallway-Effect">
+              <SignUp>
+              </SignUp>
           </div>
         </section>
-        <article className={classes.root}>
+        <article>
           <h5 variant="h5" component="h3">
             Why we exist
           </h5>
@@ -46,7 +46,6 @@ function StateLessFront(props) {
             component="button"
             variant="body2"
             className="Button"
-            onClick={props.handleDrawer}
           >
             Sign Up
           </a>

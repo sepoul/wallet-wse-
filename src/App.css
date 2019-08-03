@@ -51,17 +51,35 @@
 
 }
 
-section div {
-  width: 180px;
-  height: auto;
-}
-
-section:hover {
-  -webkit-animation: downward 2s;
-  background-color: rgb(90, 70, 10);
-}
-
 section {
   display: flex;
   flex-direction: row;
 }
+section div {
+  width: auto;
+  height: auto;
+}
+
+.Drawer {
+  width: 500px;
+  margin: 60px;
+}
+
+.Drawer:hover {
+  -webkit-animation: downward 2s;
+  background-color: rgb(90, 70, 10);
+}
+
+.Drawer-Passage {
+  width: 100px;
+  padding: 50px;
+  color: rgb(255, 0, 0, 0.1);
+}
+
+.Hallway-Effect {
+  background-color: rgb(142, 233, 104, 0.1);
+}
+/* section:hover {
+  -webkit-animation: downward 2s;
+  background-color: rgb(90, 70, 10);
+} */

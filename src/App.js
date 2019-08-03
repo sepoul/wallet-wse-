@@ -1,14 +1,22 @@
 import React from 'react';
-import Drawer from '@material-ui/core/Drawer';
 import StateLessFront from './Components/Welcome/example.js';
 import SignUp from './Components/Register/register.js';
 import './App.css';
+import { LIGHT } from './Types.js';
 
 function App() {
 
   const [state, setState] = React.useState({
     bottom: false,
   });
+
+  const decorationMatrix = new Map(
+    [
+      ["background", LIGHT],
+      ["animated", false]
+    ]
+  );
+
 
   // Adding state information
   const shouldShowFront = true;
@@ -21,7 +29,7 @@ function App() {
   return (
     <div>
     { shouldShowFront ?
-        (<StateLessFront handleDrawer={handleDrawer(true)}>
+        (<StateLessFront decorationMatrix={decorationMatrix}>
         </StateLessFront>) :
         <span>Front down</span>
     }
