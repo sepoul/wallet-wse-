@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './../../logo.png';
 import logi from './../../logi.png';
 import loga from './../../loga.png';
-import SignUp from './../Register/register.js';
+import SignUp from './../Register/register.jsx';
 
 import './../../App.css';
 

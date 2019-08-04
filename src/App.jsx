@@ -1,6 +1,6 @@
 import React from 'react';
-import StateLessFront from './Components/Welcome/example.js';
-import SignUp from './Components/Register/register.js';
+import StateLessFront from './Components/Welcome/example.jsx';
+import SignUp from './Components/Register/register.jsx';
 import './App.css';
 import { LIGHT } from './Types.js';
 
