@@ -18,9 +18,8 @@ function App() {
   );
 
   return (
-    <div>
-      <StateLessFront decorationMatrix={decorationMatrix}>
-      </StateLessFront>
+    <div> <StateLessFront decorationMatrix={decorationMatrix}>
+          </StateLessFront>
     </div>
   );
 }
