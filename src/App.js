@@ -17,10 +17,6 @@ function App() {
     ]
   );
 
-
-  // Adding state information
-
-
   return (
     <div>
       <StateLessFront decorationMatrix={decorationMatrix}>
