@@ -10,30 +10,46 @@ function SignUp(props) {
         </h3>
         <form>
           { isAnimated ?
-              <div> <span className="decoration"> Welcome TO the world social economy
-                    </span>
-                    <p> Here should go some input actually about the beauty of WSE
-                    </p>
-                    <table> <tr>  <td>Go shotta ya
-                                  </td>
-                                  <td>Go shotta ya
-                                  </td>
-                                  <td>Go shotta ya
-                                  </td>
-                            </tr>
-                            <tr>  <td>Go shotta ya
-                                  </td>
-                                  <td>Go shotta ya
-                                  </td>
-                                  <td>Go shotta ya
-                                  </td>
-                            </tr>
-                    </table>
+              <div className="log-in"> <span className="decoration">WSE
+                                       </span>
+                                       <caption> WORLD SOCIAL ECONOMY WAS CREATED TO MAKE EVERYONE EQUAL.
+                                       </caption>
+                                       <table> <tr>
+                                                    <label for="traditional">  traditional input
+                                                    </label>
+                                                    <input type="textarea" name="traditional">
+                                                    </input>
+                                                    <label for="traditional">  traditional input
+                                                    </label>
+                                                    <input type="textarea" name="traditional">
+                                                    </input>
+                                              </tr>
+                                              <tr>
+                                                    <label for="traditional">  traditional input
+                                                    </label>
+                                                    <input type="textarea" name="traditional">
+                                                    </input>
+                                                    <label for="traditional">  traditional input
+                                                    </label>
+                                                    <input type="textarea" name="traditional">
+                                                    </input>
+                                              </tr>
+                                              <tr>
+                                                    <label for="traditional">  traditional input
+                                                    </label>
+                                                    <input type="textarea" name="traditional">
+                                                    </input>
+                                                    <label for="traditional">  traditional input
+                                                    </label>
+                                                    <input type="textarea" name="traditional">
+                                                    </input>
+                                              </tr>
+                                       </table>
 
               </div> :
               (
                 <div>  <p>
-                        <div className="Sign-Up">Specific stuff, add some spectific level css here
+                        <div className="Sign-Up">BY GIVING EVERYONE 50 DIGITAL UNITED SOCIAL DOLLAR PER DAY. FOR THEM TO USE IT TO EXCHANGE SECOND HANDED ITEMS.
                         </div>
                         <div className="Sign-Up">
                           <label for="traditional">traditional input
@@ -59,6 +75,7 @@ function SignUp(props) {
             </div>
           )
         }
+        <button type="submit" value="Register">Register</button>
         </form>
       </section>
   );

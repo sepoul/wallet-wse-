@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './../../logo.png';
 import logi from './../../logi.png';
 import loga from './../../loga.png';
 import SignUp from './../Register/register.jsx';
@@ -11,25 +10,41 @@ function StateLessFront(props) {
   const decorationMatrix = props.decorationMatrix;
   const isAnimated = decorationMatrix.get("animated");
 
+  const [state, setState] = React.useState({
+    shouldShowSignUp: false,
+    bottom: false
+  });
+
+  const handleSignUp = () => setState({...state, shouldShowSignUp: true});
+
+  const shouldShowSignUp = state.shouldShowSignUp;
+
   return (
     <div className="App" >
       <header className="App-header">
-        <div className="Welcome"> <h1>  The world social economy
+        <div className="Welcome"> <h1> YOU CAN UPLOAD SECOND HAND ITEMS FOR SALE ON THE WEBSITE AND PRECISE YOUR PRICE.
                                   </h1>
                                   <div id="images"> <div> <p component="p">
-                                                          This platform helps you buy goods using our free wsec. You can
-                                                          also sell goods using the same currency. Start by making an
-                                                          account and you can't start your purchases immediatly.
+                                                            IT WILL GIVE YOU 50 DIGITAL UNITED SOCIAL  DOLLAR PER DAY.
                                                           </p>
                                                     </div>
                                                     <div> <img src={logi} className="App-logo" alt="logo" />
                                                     </div>
-                                                    <div> <img src={loga} className="App-logo" alt="logo" />
+                                                    <div> <button type="submit" onClick={handleSignUp}> SIGN IN
+                                                          </button>
+                                                          { shouldShowSignUp ?
+                                                                (
+                                                                  <div className="Sign-Up"> <SignUp isAnimated={isAnimated}>
+                                                                                            </SignUp>
+                                                                  </div>
+                                                                ) :
+                                                                null
+                                                            }
                                                     </div>
                                   </div>
                                   <article id="chart">  <h5>  To Read our chart
                                                         </h5>
-                                                        <button>  Chart
+                                                        <button type="submit">  Chart
                                                         </button>
                                                         <aside> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus arcu turpis, tristique in lacus vitae, volutpat interdum nisl. Morbi fringilla diam in faucibus mattis. Vestibulum congue magna in nisi tristique efficitur. In condimentum arcu nec leo ultricies laoreet. Integer diam metus, ornare id facilisis vel, vulputate a purus. Mauris ligula turpis, laoreet a volutpat eu, pharetra quis odio. Aliquam sodales ex sit amet nisl ornare sollicitudin. Sed ac iaculis ante. Suspendisse leo justo, lobortis sed eros vitae, pulvinar elementum turpis. Nulla pellentesque arcu feugiat erat gravida ullamcorper. Curabitur mattis turpis eget nibh pulvinar feugiat. Vestibulum convallis turpis efficitur dolor suscipit, id dictum tortor feugiat. Maecenas ut gravida justo.
 
@@ -43,10 +58,7 @@ function StateLessFront(props) {
                                                         </aside>
                                   </article>
         </div>
-        <div className="Sign-Up"> <SignUp isAnimated={isAnimated}>
-                                  </SignUp>
-        </div>
-        <section> <div className="Sign-Up Drawer-Passage Hallway-Effect">
+        <main> <div className="Sign-Up Drawer-Passage Hallway-Effect">
                     <SignUp>
                     </SignUp>
                   </div>
@@ -58,15 +70,13 @@ function StateLessFront(props) {
                       <SignUp>
                       </SignUp>
                   </div>
-        </section>
+        </main>
         <article> <h5 variant="h5" component="h3">  Why we exist
                   </h5>
                   <p>
-                    This platform helps you buy goods using our free wsec. You can
-                    also sell goods using the same currency. Start by making an
-                    account and you can't start your purchases immediatly.
+                      BUT YOU HAVE TO AGREE THAT THIS SOCIAL CURRENCY CAN ONLY BE USED TO BUY SECOND HANDED ITEMS AND SERVICES.
                   </p>
-                  <a href="#">  Sign Up
+                  <a href="#">  AND YOU HAVE TO AGREE THAT YOU WILL NOT ACCEPT OR USE ANY OTHER SOCIAL CURRENCY.
                   </a>
         </article>
       </header>
